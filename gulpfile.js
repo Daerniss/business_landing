@@ -5,6 +5,8 @@ const sass = require('gulp-sass');
 const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
 const rename = require('gulp-rename');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('server', function () {
     browserSync.init({
@@ -27,8 +29,11 @@ gulp.task('compile:templates', function buildHTML() {
 
 gulp.task('compile:styles', function () {
     return gulp.src('./source/styles/main.scss')
+        .pipe(sourcemaps.init())
+        .pipe(autoprefixer())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename('main.min.css'))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./build/css'));
 });
 
