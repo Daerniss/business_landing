@@ -1,8 +1,19 @@
-.test {
-    height: 500px;
-    width: 500px;
-    background-color: black;
-    margin: 0 auto;
-    color: green;
-    display: flex;
-}
+@import 'vendor/fontawesome.scss';
+@import 'vendor/brands.scss';
+@import 'vendor/regular.scss';
+@import 'vendor/solid.scss';
+@import 'vendor/normalize.scss';
+
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/sprite';
+@import 'base/common';
+
+@import 'components/button';
+
+@import "sections/header";
+@import "sections/nav";

@@ -1,0 +1,10 @@
+nav(class="nav header__nav")
+    - var items = ['Home', 'Abous us', 'Our Approach', 'Our work']
+    each item in items
+        if item === 'Home'
+            a.nav__link.nav__link--active(href="/" )= item
+        else
+            a.nav__link(href="/" )= item
+
+//- mixin nav(items, parentClass, activeIndex)
+//-     nav(class="nav " +parentClass +"__nav")

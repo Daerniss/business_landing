@@ -1,0 +1,47 @@
+.nav {
+    vertical-align: top;
+
+    &__link {
+        position: relative;;
+        display: inline-block;
+        color: $color-secondary;
+        transition: .3s;
+        &:not(:last-child) {
+            margin-right: 1.7rem;
+            
+            &::after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: .5rem;
+                height: .5rem;
+                background-color: $color-secondary;
+                border-radius: 50%;
+                margin-left: 1.7rem;
+            }
+               
+            // }
+            // &::after {
+            //     content: '';
+            //     display: inline-block;
+            //     width: .5rem;
+            //     height: .5rem;
+            //     background-color: $color-secondary;
+            //     border-radius: 50%;
+            //     position: absolute;
+            //     right: 0;
+            //     @include center-y();
+            // }
+        }
+
+        &--active,
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+}
