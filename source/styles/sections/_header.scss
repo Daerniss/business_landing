@@ -2,6 +2,7 @@
     &__top {
         background-color: $color-header-top;
         box-shadow: 0 0.1rem 0 $color-border;
+        position: relative;
     }
 
     &__bottom {
@@ -57,4 +58,5 @@
     display: inline-block;
     font-size: 3rem;
     border-radius: 3px;
+    @include center-y();
 }
