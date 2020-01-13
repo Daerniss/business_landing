@@ -1,0 +1,6 @@
+mixin heading(color, line, parent, headingText, text)   
+    .heading(class=`heading--${color} heading--${line ? 'line' : 'no-line'} ${parent}__heading`)
+        h2.heading__main #{headingText}
+        .heading__text #{text}
+    
+    
