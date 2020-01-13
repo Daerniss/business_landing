@@ -24,6 +24,10 @@
 
 .contacts {
     text-align: right;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .contact {
@@ -58,5 +62,6 @@
     display: inline-block;
     font-size: 3rem;
     border-radius: 3px;
-    @include center-y();
+    // @include center-y();
+    // right: 0;
 }
