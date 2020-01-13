@@ -30,6 +30,16 @@
         font-weight: 700;
     }
 
+    &--subscribe {
+        padding: 1.4rem 3.2rem;
+        background-color: transparent;
+        color: $color-white;
+        border: 0.2rem solid #515151;
+        font-size: 1.7rem;
+        font-family: $ff-main-bold;
+
+    }
+
     &--red {
         background-color: $color-primary;
 

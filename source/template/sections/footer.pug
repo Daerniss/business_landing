@@ -1,2 +1,17 @@
+- var linkItems = ['fa-facebook-f', 'fa-twitter', 'fa-telegram-plane', 'fa-linkedin-in']
+- var linkUrls = ['facebook.com', 'twitter.com', 'telegram.com', 'linkedin.com']
 footer.footer
-    h2 Footer
+    .footer__top
+        .container
+            h3.footer__title Get in touch
+            .footer__links
+                each item, key in linkItems
+                    a(href="http://" + linkUrls[key] target="_blank")
+                        i(class="fab " + item)
+            .footer__text Subscribe to our newsletter to stay update with what is new
+            form(action="#" method="post")
+                .footer__field
+                    input.footer__input(type="email" placeholder="Email Address" required)
+                    button(type="submit").button.button--subscribe Subscribe
+    .footer__bottom
+        .footer__copy Cssauthor.com &copy; 2014 All Rights Reserved

@@ -1,0 +1,72 @@
+.footer {
+    text-align: center;
+    &__top {
+        background-color: #2a2a2a;
+        padding: 9rem 0 8.6rem;
+    }
+
+    &__links {
+        margin-bottom: 4rem;
+        a {
+            color: $color-white;
+            padding: 1rem 1.2rem;
+            border: 0.2rem solid #515151;
+            border-radius: 3px;
+            font-size: 2.3rem;
+            transition: .3s;
+
+            &:not(:last-child) {
+                margin-right: 2.4rem;
+            }
+
+            &:hover {
+                border: 0.2rem solid $color-primary;
+                color: $color-primary
+            }
+        }
+    }
+
+    &__title {
+        color: $color-white;
+        font-family: $ff-main-bold;
+        font-size: 2.9rem;
+        margin-bottom: 3.1rem;
+    }
+
+    &__text {
+        color: #cecece;
+        font-size: 1.4rem;
+        margin-bottom: 3.1rem;
+    }
+
+    &__field{
+        max-width: 68.3rem;
+        margin: 0 auto;
+    }
+    &__input {
+        width: 100%;
+        height: 5.4rem;
+        padding-left: 2.2rem;
+        background-color: #515151;
+        border: none;
+        border-radius: 5px;
+        color: $color-white;
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+
+        &::placeholder {
+            color: #cecece;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__bottom {
+        background-color: #515151;
+        padding: 2.7rem 0;
+    }
+
+    &__copy {
+        font-size: 1.4rem;
+        color: #cecece;
+    }
+}

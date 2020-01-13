@@ -1,0 +1,25 @@
+.container {
+    max-width: 102.4rem;
+    margin: auto;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.btn-down {
+    width: 5.8rem;
+    height: 5.8rem;
+    border-radius: 50%;
+    border: 3px solid $color-white;
+    margin: 0 auto;
+    margin-bottom: 5.5rem;
+    position: relative;
+    cursor: pointer;
+
+    &__arrow {
+        font-size: 2.5rem;
+        @include center();
+        color: $color-white;  
+    }
+}

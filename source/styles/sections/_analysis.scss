@@ -5,22 +5,10 @@
     &__heading {
         margin-bottom: 1.8rem;
     }
+   
+    .btn-down {
+        margin-bottom: 5.5rem;   
+    }
 
     
-    .btn-down {
-        width: 5.8rem;
-        height: 5.8rem;
-        border-radius: 50%;
-        border: 3px solid $color-white;
-        margin: 0 auto;
-        margin-bottom: 5.5rem;
-        position: relative;
-    }
-
-    .arrow-down {
-        font-size: 2.5rem;
-        @include center();
-        color: $color-white;
-
-    }
 }
