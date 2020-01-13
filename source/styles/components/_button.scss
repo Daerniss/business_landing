@@ -37,7 +37,9 @@
         border: 0.2rem solid #515151;
         font-size: 1.7rem;
         font-family: $ff-main-bold;
-
+        &:hover {
+            background-color: lighten(#515151, 7%);
+        }
     }
 
     &--red {
