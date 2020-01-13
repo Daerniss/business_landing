@@ -1,5 +1,6 @@
 node_modules/
-build/
+# build/
 npm-debug.log
 .DS_Store
 Desktop.ini
+node_modules
