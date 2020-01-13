@@ -18,18 +18,28 @@
         text-align: center;
         color: $color-secondary;
 
-        @include respond('phone') {
+        @include respond('tab-port') {
             flex-direction: column;
+            align-items: center;
         }
+
     }
 
     &__item {
         flex:0 1 24.3rem;
 
-        @include respond('phone') {
+        @include respond('tab-port') {
+            flex-direction: column;
+            align-items: center;
+            max-width: 40rem;
+
             &:not(:last-child) {
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
             }
+        }
+
+        @include respond('phone') {
+            
         }
     }
 

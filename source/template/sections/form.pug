@@ -1,11 +1,11 @@
-form(method="post" action="#").form
-    button.form__close-button &times;
+form(action="#").form
+    button(type="button").form__close-button &times;
     p.form__text.
         Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
 
     .form__fields
-        input.form__input(type="text" placeholder="Your Name")
-        input.form__input(type="text" placeholder="Contact Number")
+        input.form__input(type="text" placeholder="Your Name" required)
+        input.form__input(type="text" placeholder="Contact Number" required)
         input.form__input(type="text" placeholder="Company Name")
 
     button.button.button--medium.button--red SUBMIT NOW
