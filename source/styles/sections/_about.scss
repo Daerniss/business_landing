@@ -2,6 +2,10 @@
     padding: 10.2rem 0 0;
     min-height: 54.2rem;
 
+    @include respond('phone') {
+        padding: 7rem 0;
+    }
+
     &__heading {
         margin-bottom: 4.6rem;
     }
@@ -13,10 +17,20 @@
         flex-wrap: wrap;
         text-align: center;
         color: $color-secondary;
+
+        @include respond('phone') {
+            flex-direction: column;
+        }
     }
 
     &__item {
         flex:0 1 24.3rem;
+
+        @include respond('phone') {
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
     }
 
     &__header {

@@ -2,6 +2,10 @@
     padding: 9rem 0 13.3rem;
     background-color: #f3f3f3;
 
+    @include respond('phone') {
+        
+    }
+
     &__heading {
         margin-bottom: 4.5rem;
     }
@@ -12,7 +16,7 @@
 
     &__item {
         display: flex;
-        min-height: 23.5rem;
+        max-height: 23.5rem;
         box-shadow: 0 0 0.5rem #e2e2e2;
         border-radius: 4px;
         background-color: $color-white;
@@ -27,6 +31,10 @@
 
             .approach__text {
                 padding: 7.4rem 9rem 7.4rem 7.2rem;
+
+                @include respond('phone') {
+                    padding: 4.2rem 6rem 4.2rem 4rem;
+                }
             }
 
             .approach__step {
@@ -39,6 +47,10 @@
     &__image {
         position: relative;
         flex: 1 0 33%;
+        @include respond('phone') {
+            flex: 1 0 40%;
+        }
+        
     }
 
     &__picture {
@@ -71,6 +83,10 @@
 
     &__text {
         padding: 7.4rem 7.2rem 7.4rem 9rem;
+
+        @include respond('phone') {
+            padding: 4.2rem 4rem 4.2rem 6rem;
+        }
     }
 
     &__title {
